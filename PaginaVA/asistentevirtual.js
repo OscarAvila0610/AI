@@ -16,6 +16,12 @@ window.onload = function(){
 
         //Definimos los comandos a utilizar.
         var commands = {
+            'Creador': function () {
+                utter.text = 'Los creadores somos: ';
+                //Setea la voz que queremos usar en base a nuestra lista.
+                utter.voice = voices[0];
+                window.speechSynthesis.speak(utter);
+            },
             'Hola': function () {
                 utter.text = 'Hola a Todos';
                 //Setea la voz que queremos usar en base a nuestra lista.
