@@ -125,6 +125,9 @@ window.onload = function(){
 
         //Sumamos todos los comandos a annyang.
         annyang.addCommands(commands);
+        
+        //Configurar annyang en español
+        annyang.addLanguage("es");
 
         //Annyang comienza a escuchar.
         annyang.start({ autoRestart: false, continuous: true });
