@@ -48,6 +48,19 @@ window.onload = function(){
             'twitter': function(){
                 window.open('https://www.twitter.com')
             },
+            
+            'cuando son los finales': function () {
+                utter.text = 'empiezan el proximo miercoles';
+                utter.voice = voices[0];
+                window.speechSynthesis.speak(utter);
+            },
+
+            'eres un robot': function () {
+                utter.text = 'No, tu lo eres?';
+                utter.voice = voices[0];
+                window.speechSynthesis.speak(utter);
+            },
+            
             'Cuando son los parciales': function () { sendAnswer('Cuando son los parciales');},
             'Cuanto se paga de inscripcion': function () { sendAnswer('Cuanto se paga de inscripcion');},
             'Cuanto se paga de mensualidad': function () { sendAnswer('Cuanto se paga de mensualidad');},
